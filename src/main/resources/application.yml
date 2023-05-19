@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: Springboot_FileUploadDemo
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/FileUploadDemo?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowMultiQueries=true&allowPublicKeyRetrieval=true
+    username: root
+    password: admin
+server:
+  port: 14852
+  undertow:
+    io-threads: 16
+    worker-threads: 256
+    buffer-size: 1024
+    buffers-per-region: 1024
+    direct-buffers: true
+  servlet:
+    context-path: /Springboot_FileUploadDemo
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.codervibe.Springboot_FileUploadDemo.model
+
+
+logging:
+  level:
+    root: info
+    com.codervibe.Springboot_FileUploadDemo: info
+    com.codervibe.Springboot_FileUploadDemo.mapper: debug
+  file:
+    path: ./Springboot_FileUploadDemoServer/log
+
