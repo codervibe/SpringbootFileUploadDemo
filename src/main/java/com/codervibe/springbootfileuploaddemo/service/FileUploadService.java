@@ -1,6 +1,7 @@
-package com.codervibe.springboot_fileuploaddemo.service;
+package com.codervibe.springbootfileuploaddemo.service;
 
-import com.codervibe.springboot_fileuploaddemo.model.Resp;
+
+import com.codervibe.springbootfileuploaddemo.model.Resp;
 import org.springframework.web.multipart.MultipartFile;
 
 /**

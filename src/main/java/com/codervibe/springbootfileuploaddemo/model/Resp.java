@@ -1,4 +1,4 @@
-package com.codervibe.springboot_fileuploaddemo.model;
+package com.codervibe.springbootfileuploaddemo.model;
 
 /**
  * @author Administrator
