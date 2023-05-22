@@ -2,6 +2,7 @@ package com.codervibe.springbootfileuploaddemo.controller;
 
 
 import com.codervibe.springbootfileuploaddemo.model.Resp;
+import com.codervibe.springbootfileuploaddemo.model.User;
 import com.codervibe.springbootfileuploaddemo.service.FileUploadService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -42,7 +43,6 @@ public class FileUploadController {
         log.info("上传下载 文件 方法 执行");
         Map<String,Object> result =new HashMap<>();
         String originalFilename = file.getOriginalFilename();
-
         String 当前时间 = timeFormat.format(new Date());
         String realPath = request.getServletContext().getRealPath("/") + 当前时间;
         log.info("realPath = "+realPath);

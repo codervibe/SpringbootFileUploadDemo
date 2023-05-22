@@ -8,6 +8,11 @@ public class Resp <E>{
     private String message;
     private E body;
 
+    public Resp(String code, String message) {
+        this.code = code;
+        this.message = message;
+    }
+
     public Resp(String code, String message, E body) {
         this.code = code;
         this.message = message;
@@ -37,7 +42,9 @@ public class Resp <E>{
     public void setBody(E body) {
         this.body = body;
     }
-
+    public static <E> Resp<E> success(String message){
+        return new Resp<>("200",message);
+    }
     public static <E> Resp<E> success(E body){
         return new Resp<>("200","",body);
     }
