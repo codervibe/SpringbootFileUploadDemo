@@ -2,7 +2,6 @@ package com.codervibe.springbootfileuploaddemo.controller;
 
 
 import com.codervibe.springbootfileuploaddemo.model.Resp;
-import com.codervibe.springbootfileuploaddemo.model.User;
 import com.codervibe.springbootfileuploaddemo.service.FileUploadService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
